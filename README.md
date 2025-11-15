@@ -6,25 +6,25 @@ O projeto utiliza Playwright e JavaScript para validar o fluxo completo de compr
 
 ## 🛠️ **Tecnologias Utilizadas**
 
-<img width:25 height:18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" /> Framework de Teste: Playwright.
+<img width=25 height=18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" /> Framework de Teste: Playwright.
 
-<img width:25 height:18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> Linguagem: JavaScript.
+<img width=25 height=18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> Linguagem: JavaScript.
 
-<img width:25 height:18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" /> Gestor de Pacotes: npm.
+<img width=25 height=18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" /> Gestor de Pacotes: npm.
 
 📂 Arquitetura: Page Object Model (POM).
 
 ## 🚀 **Configuração e Setup**
 
-***Para executar este projeto localmente, siga os passos abaixo.***
+⚠️***Para executar este projeto localmente, siga os passos abaixo.***
 
 **Pré-requisitos**
 
-<img width:25 height:18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /> Node.js (versão 18 ou superior)
+<img width=25 height=18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /> Node.js (versão 18 ou superior)
 
-<img width:25 height:18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" /> npm (geralmente instalado com o Node.js)
+<img width=25 height=18 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" /> npm (geralmente instalado com o Node.js)
 
-## **Passos de Instalação**
+## 👣 **Passos de Instalação**
 
 Clone o repositório:
 
@@ -47,18 +47,25 @@ Instale os navegadores do Playwright:
 ### O projeto está configurado para executar os testes de várias formas.
 
 **1 - Executar todos os testes (Modo Headless)**
-Este é o comando padrão para execução em pipeline ou para verificar todos os testes.
+
+*Este é o comando padrão para execução em pipeline ou para verificar todos os testes.*
+
 *npx playwright test*
 
 **2 - Executar os testes em Modo Interativo (UI)**
-O Playwright UI Mode é excelente para depurar e ver a execução passo a passo.
+
+*O Playwright UI Mode é excelente para depurar e ver a execução passo a passo.*
+
 *npx playwright test --ui*
 
 **3 - Ver o Relatório de Testes**
-Após a execução (do comando 1), um relatório HTML é gerado. Use este comando para o abrir no seu navegador:
+
+*Após a execução (do comando 1), um relatório HTML é gerado. Use este comando para o abrir no seu navegador:*
+
 *npx playwright show-report*
 
 ## 🏗️ **Estrutura do Projeto**
+
 **O projeto segue a arquitetura Page Object Model (POM) para garantir manutenibilidade e robustez.**
 
 ```
@@ -94,10 +101,10 @@ Cobertura (Passo 2 - Pesquisa): O site não possui um campo de "pesquisa" de pro
 
 Sincronização: Em vez de usar esperas forçadas (waitForTimeout), foram usadas asserções de estado do Playwright (ex: await expect(this.cartBadge).toHaveText('1')) para garantir que a UI estava atualizada antes de o teste prosseguir.
 
-##  **Separação dos Testes:** 
+## 🧱 **Separação dos Testes:** 
 
-O desafio foi dividido em:
+### O desafio foi dividido em:
 
-Testes de Componente (login.spec.js, products.spec.js): Testam funcionalidades isoladas (login falha, filtro funciona, etc.).
+**Testes de Componente (login.spec.js, products.spec.js):** Testam funcionalidades isoladas (login falha, filtro funciona, etc.).
 
-Teste E2E (e2e-flow.spec.js): Valida o "caminho feliz" do fluxo de compra completo, conforme descrito nos 5 passos do desafio.
+**Teste E2E (e2e-flow.spec.js):** Valida o "caminho feliz" do fluxo de compra completo, conforme descrito nos 5 passos do desafio.
