@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-playwright-auvo",
+  "version": "1.0.0",
+  "description": "Test for Auvo(SauceDemo using Playwright)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "Isaac Taylor",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
+    "javascript": "^1.0.0"
+  }
+}
